@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:overScrollMode="never"
+    android:background="@color/add_download_info_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="25dp"
+        android:background="@color/add_download_info_background"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0.5dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@color/alivc_color_gray" />
+
+            <TextView
+                android:id="@+id/tv_action_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="@string/alivc_danmaku_setting_title"
+                android:textColor="@color/alivc_base_white"
+                android:textSize="12sp" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0.5dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@color/alivc_color_gray" />
+
+        </LinearLayout>
+
+        <!--透明度start-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="32dp"
+            android:paddingTop="10dp"
+            android:paddingRight="32dp"
+            android:paddingBottom="16dp">
+
+            <TextView
+                android:id="@+id/tv_alpha"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/alivc_danmaku_setting_alpha"
+                android:textColor="@color/alivc_base_white"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_alpha_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_alpha"
+                android:layout_alignParentRight="true"
+                android:text="0%"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/alivc_base_white"
+                android:textSize="12sp" />
+
+            <android.support.v7.widget.AppCompatSeekBar
+                android:id="@+id/seek_alpha"
+                style="@style/alivc_info_seekbar_blue_voice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_alpha"
+                android:progress="0"
+                android:layout_alignLeft="@id/tv_alpha"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="8dp"
+                android:layout_toLeftOf="@id/tv_alpha_value"
+                android:paddingTop="6dp"
+                android:paddingBottom="6dp" />
+
+        </RelativeLayout>
+        <!--透明度end-->
+
+        <!--显示区域start-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="32dp"
+            android:paddingTop="10dp"
+            android:paddingRight="32dp"
+            android:paddingBottom="16dp">
+
+            <TextView
+                android:id="@+id/tv_region"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/alivc_danmaku_setting_region"
+                android:textColor="@color/alivc_base_white"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_region_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_region"
+                android:layout_alignParentRight="true"
+                android:text="1/4屏"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/alivc_base_white"
+                android:textSize="12sp" />
+
+            <android.support.v7.widget.AppCompatSeekBar
+                android:id="@+id/seek_region"
+                style="@style/alivc_info_seekbar_blue_voice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_region"
+                android:layout_alignLeft="@id/tv_region"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:max="3"
+                android:layout_marginRight="8dp"
+                android:layout_toLeftOf="@id/tv_region_value"
+                android:paddingTop="6dp"
+                android:paddingBottom="6dp" />
+
+        </RelativeLayout>
+        <!--显示区域end-->
+
+        <!--同屏速度start-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="32dp"
+            android:paddingTop="10dp"
+            android:paddingRight="32dp"
+            android:paddingBottom="16dp">
+
+            <TextView
+                android:id="@+id/tv_speed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/alivc_danmaku_setting_speed"
+                android:textColor="@color/alivc_base_white"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_speed_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_speed"
+                android:layout_alignParentRight="true"
+                android:text="0%"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/alivc_base_white"
+                android:textSize="12sp" />
+
+            <android.support.v7.widget.AppCompatSeekBar
+                android:id="@+id/seek_speed"
+                style="@style/alivc_info_seekbar_blue_voice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_speed"
+                android:layout_alignLeft="@id/tv_speed"
+                android:layout_gravity="center"
+                android:progress="0"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="8dp"
+                android:layout_toLeftOf="@id/tv_speed_value"
+                android:paddingTop="6dp"
+                android:paddingBottom="6dp" />
+
+        </RelativeLayout>
+        <!--同屏速度end-->
+
+
+        <TextView
+            android:id="@+id/tv_default"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="13dp"
+            android:background="@color/alivc_shape_background_black_alpha"
+            android:gravity="center"
+            android:padding="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp"
+            android:text="@string/alivc_danmaku_setting_default"
+            android:textColor="@color/alivc_base_white"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+</ScrollView>

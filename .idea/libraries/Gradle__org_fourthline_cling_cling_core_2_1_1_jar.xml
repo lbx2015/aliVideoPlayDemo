@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.fourthline.cling:cling-core:2.1.1@jar">
+    <CLASSES>
+      <root url="jar://D:/gradle/caches/modules-2/files-2.1/org.fourthline.cling/cling-core/2.1.1/767954a4d738b8c77606d19a6c0255193651ccba/cling-core-2.1.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://D:/gradle/caches/modules-2/files-2.1/org.fourthline.cling/cling-core/2.1.1/6c83ad82b71e075df4af5ee292bc00daa710196c/cling-core-2.1.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

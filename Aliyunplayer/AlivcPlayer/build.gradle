@@ -1,0 +1,3 @@
+configurations.maybeCreate("default")
+artifacts.add("default", file('AliyunPlayer-4.5.0-part.aar'))
+
